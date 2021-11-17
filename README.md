@@ -17,7 +17,7 @@ The following machines live on the network:
 | Kali    |  192.168.1.90  |
 | Target    | 192.168.1.105   |
 |ELK | 192.168.1.100   |
-|Azure Hyper-V ML-RefVm-684427 | 192.168.1.1   |
+|Azure Host Machine | 192.168.1.1   |
 
 ![Network Diagram](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Project%202%20Network%20Topology.jpg)
 
@@ -96,7 +96,7 @@ Time: 11/06/2021  12:00-18:00 PM
 ![alt text](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/Error_Success_transactions.png)
 
 
-**Access to Sensitive Data in secret_folder**: On the dashboard you built, a look at your Top 10 HTTP requests [Packetbeat] ECS panel. In this example, this folder was requested 14,430 times.
+**Access to Sensitive Data in secret_folder**: On the dashboard you built, a look at your Top 10 HTTP requests [Packetbeat] ECS panel. In this example, this folder was requested 14,340 times.
 
 ![alt text](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/secret_folder_access_highlighted.png)
 
