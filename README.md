@@ -65,7 +65,7 @@ Additional vulnerabilities include:
       - [Upload shell](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/Day1_reverse_shell_webdav.png) via WebDAV 
 
     - **Achievements**
-      - Uploading a web shell allows us to execute arbitrary shell commands on the target
+      - [Uploading a shell](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/shell_uploaded.png) allows us to execute arbitrary shell commands on the target
 
     - **Aftermath**
       - Running arbitrary shell commands allows Meterpreter to open a [full-fledged connection](https://) to the target
