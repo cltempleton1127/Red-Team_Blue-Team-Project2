@@ -84,7 +84,7 @@ Time: 11/06/2021  12:00-18:00 PM
 
 In addition, note the connection spike in the Connections over time [Packetbeat Flows] ECS, as well as the spike in errors in the Errors vs successful transactions [Packetbeat] ECS
 
-![alt text](https://)
+![alt text](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/HTTP%20Transacctions.png)
 
 ![alt text](https://)
 
