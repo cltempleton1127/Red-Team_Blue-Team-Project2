@@ -82,11 +82,11 @@ A considerable amount of data is available in the logs. Specifically, evidence o
 **Unusual Request Volume**: Logs indicate an unusual number of requests and failed responses between the Kali VM and the target.
 Time: 11/06/2021  12:00-18:00 PM
 
-In addition, note the connection spike in the Connections over time [Packetbeat Flows] ECS, as well as the spike in errors in the Errors vs successful transactions [Packetbeat] ECS
+In addition, note the connection spike in the HTTP Requests around 2:50 [Packetbeat Flows] ECS, as well as the spike in errors, then a sudden switch to "OK" or succesful transaction status around the time of the spike also [Packetbeat] ECS
 
 ![alt text](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/HTTP%20Transacctions.png)
 
-![alt text](https://)
+![alt text](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/Error_Success_transactions.png)
 
 **Access to Sensitive Data in secret_folder**: On the dashboard you built, a look at your Top 10 HTTP requests [Packetbeat] ECS panel. In this example, this folder was requested 14,430 times.
 
