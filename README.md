@@ -14,8 +14,8 @@ The following machines live on the network:
 
 | **Name**     | **IP Address** |
 |----------|------------|
-| Kali    |  192.168.1.90  |
-| Target    | 192.168.1.105   |
+| Kali (Attack) VM   |  192.168.1.90  |
+| Target VM   | 192.168.1.105   |
 |ELK | 192.168.1.100   |
 |Azure Host Machine | 192.168.1.1   |
 
