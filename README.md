@@ -68,7 +68,7 @@ Additional vulnerabilities include:
       - [Uploading a shell](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/shell_uploaded.png) allows us to execute arbitrary shell commands on the target
 
     - **Aftermath**
-      - Running arbitrary shell commands allows Meterpreter to open a [full-fledged connection](https://) to the target
+      - Running arbitrary shell commands allows Meterpreter to open a [full-fledged connection](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/Day1_downloaded_Flag1.png) to the target.
 
 # **Blue Team**
 
@@ -88,7 +88,7 @@ In addition, note the connection spike in the Connections over time [Packetbeat 
 
 ![alt text](https://)
 
-**Access to Sensitive Data in secret_folder**: On the dashboard you built, a look at your Top 10 HTTP requests [Packetbeat] ECS panel. In this example, this folder was requested 15,987 times.
+**Access to Sensitive Data in secret_folder**: On the dashboard you built, a look at your Top 10 HTTP requests [Packetbeat] ECS panel. In this example, this folder was requested 14,430 times.
 
 ![alt text](https://)
 
