@@ -46,7 +46,7 @@ Additional vulnerabilities include:
 
   - **Explotation: Sensitive Data Exposure**
     - Tools & Processes
-      - `nmap` to [scan network](https://)
+      - `nmap` to [scan network](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/Day1_Kali_Nmap_scan.png)
       - `dirb` to map URLs
       - Browser to explore
 
