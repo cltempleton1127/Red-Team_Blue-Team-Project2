@@ -6,7 +6,7 @@ Assessment, Analysis, and Hardening of a vulnerable system. This presentation in
     - Logs were used to extract hard data and visualizations for the report 
     - Log data was then used to suggest mitigation measures for each exploit
 
-Here is the [PowerPoint Presentation]() that lays out the process and achievements of the project.
+Here is the [PowerPoint Presentation](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Red%20Team_Blue%20Team_Presentation%20.pdf) that lays out the process and achievements of the project.
 
 # Network Topology
 
