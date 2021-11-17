@@ -89,7 +89,7 @@ Time: 11/06/2021  12:00-18:00 PM
 ![alt text](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/TopHostsCreatingTrafficNov6.png)
 
 
-**In addition, note the connection spike in the HTTP Requests around 2:50pm [Packetbeat Flows] ECS, as well as the spike in errors, then a sudden switch to "OK" or succesful transaction status around the time of the spike also [Packetbeat] ECS
+**In addition, note the connection spike in the HTTP Requests around 2:50pm [Packetbeat Flows] ECS, as well as the spike in errors, then a sudden switch to "OK" or succesful transaction status around the time of the spike also [Packetbeat] ECS**
 
 ![alt text](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/HTTP%20Transacctions.png)
 
@@ -103,7 +103,7 @@ Time: 11/06/2021  12:00-18:00 PM
 
 **HTTP Brute Force Attack**: Searching for `url.path: /company_folders/secret_folder/` shows conversations involving the sensitive data. Specifically, the results contain requests from the brute-forcing tool Hydra, identified under the user_agent.original section.
 
-![alt text](https://)
+![alt text](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/2021-11-11%2020_04_20-Day2_180MIN_kibana_discover_mozilla_hydra.png)
 
 In addition, the logs contain evidence of a large number of requests for the sensitive data, of which only 6 were successful. This is a telltale signature of a brute-force attack. 
 
@@ -129,7 +129,7 @@ WebDAV Connection & Upload of shell.php: The logs also indicate that an unauthor
 
   * High Volume of Traffic from Single Endpoint
 
-    * Rate-limiting traffic from a specific IP address would reduce the web server's susceptibility to DoS conditions, as well as provide a hook against which to trigger alerts against suspiciously suspiciously fast series of requests that may be indicative of scanning.
+  * Rate-limiting traffic from a specific IP address would reduce the web server's susceptibility to DoS conditions, as well as provide a hook against which to trigger alerts against suspiciously suspiciously fast series of requests that may be indicative of scanning.
 
   * Access to sensitive data in the secret_folder directory
 
