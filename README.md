@@ -79,24 +79,29 @@ A considerable amount of data is available in the logs. Specifically, evidence o
   - Brute-force attack against the HTTP server
   - POST request corresponding to upload of shell.php
 
+
 **Unusual Request Volume**: Logs indicate an unusual number of requests and failed responses between the Kali VM and the target.
 Time: 11/06/2021  12:00-18:00 PM
+
 
 **The top hosts creating traffic at this time are the attacking IP of 192.168.1.90 and the target at 192.168.1.105:**
 
 ![alt text](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/TopHostsCreatingTrafficNov6.png)
 
-In addition, note the connection spike in the HTTP Requests around 2:50pm [Packetbeat Flows] ECS, as well as the spike in errors, then a sudden switch to "OK" or succesful transaction status around the time of the spike also [Packetbeat] ECS
+
+**In addition, note the connection spike in the HTTP Requests around 2:50pm [Packetbeat Flows] ECS, as well as the spike in errors, then a sudden switch to "OK" or succesful transaction status around the time of the spike also [Packetbeat] ECS
 
 ![alt text](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/HTTP%20Transacctions.png)
 
 ![alt text](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/Error_Success_transactions.png)
 
+
 **Access to Sensitive Data in secret_folder**: On the dashboard you built, a look at your Top 10 HTTP requests [Packetbeat] ECS panel. In this example, this folder was requested 14,430 times.
 
-![alt text](https://)
+![alt text](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/secret_folder_access_highlighted.png)
 
-**HTTP Brute Force Attack**: Searching for url.path: /company_folders/secret_folder/ shows conversations involving the sensitive data. Specifically, the results contain requests from the brute-forcing tool Hydra, identified under the user_agent.original section:
+
+**HTTP Brute Force Attack**: Searching for `url.path: /company_folders/secret_folder/` shows conversations involving the sensitive data. Specifically, the results contain requests from the brute-forcing tool Hydra, identified under the user_agent.original section.
 
 ![alt text](https://)
 
@@ -107,9 +112,10 @@ In addition, the logs contain evidence of a large number of requests for the sen
   - 11/06/2021  12:00-18:00 PM
   - Source IP: 192.168.1.105
 
-![alt text](https://)
+![alt text](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/secret_folder_access_highlighted.png)
 
 WebDAV Connection & Upload of shell.php: The logs also indicate that an unauthorized actor was able to access protected data in the webdav directory. The passwd.dav file was requested via GET, and shell.php uploaded via POST.
+
 
 ## Mitigation steps for each vulnerability above are provided below.
 
@@ -143,6 +149,7 @@ WebDAV Connection & Upload of shell.php: The logs also indicate that an unauthor
 
     * File uploads should require authentication.
     * In addition, the server should implement an upload filter and forbid users from uploading files that may contain executable code.
+
 
 ## Assessment Summary
 
