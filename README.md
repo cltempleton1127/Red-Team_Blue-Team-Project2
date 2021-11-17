@@ -52,7 +52,7 @@ Additional vulnerabilities include:
 
     - **Achievements**
       - The exploit revealed a `secret_folder` directory
-      - This directory is [password protected](https://), but susceptible to **brute-force**
+      - This directory is [password protected](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/2021-11-13%2017_06_23-Day1_Secret_Folder_revealed.png), but susceptible to **brute-force**
 
     - **Exploitation**
       - The login prompt reveals that the user is `ashton` 
