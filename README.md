@@ -89,7 +89,7 @@ Time: 11/06/2021  12:00-18:00 PM
 ![alt text](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/TopHostsCreatingTrafficNov6.png)
 
 
-**In addition, note the connection spike in the HTTP Requests around 2:50pm [Packetbeat Flows] ECS, as well as the spike in errors, then a sudden switch to "OK" or succesful transaction status around the time of the spike also [Packetbeat] ECS**
+**In addition, note the connection spike in the HTTP Requests around 2:50pm [Packetbeat Flows] ECS, as well as the spike in errors, then a sudden switch to "OK" or successful transaction status around the time of the spike also [Packetbeat] ECS**
 
 ![alt text](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/HTTP%20Transacctions.png)
 
