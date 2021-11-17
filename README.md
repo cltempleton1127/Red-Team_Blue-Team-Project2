@@ -56,11 +56,11 @@ Additional vulnerabilities include:
 
     - **Exploitation**
       - The login prompt reveals that the user is `ashton` 
-      - This information is used to run a [brute force attack](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/Day1_Rockyou_ashton_password_find.png), [steal senstive data](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/Day1_Secret_Folder_Login_Corp_server_message_ashton_password%20-%20Copy.png) and [crack a second users password hash](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/Day1_CrackStation_hashed_pwd_linux4u.png).
+      - This information is used to run a [brute force attack](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/Day1_Rockyou_ashton_password_find.png) and [steal senstive data](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/Day1_Secret_Folder_Login_Corp_server_message_ashton_password%20-%20Copy.png).
 
   - **Explotation: Sensitive Data Exposure**
     - **Tools & Processes**
-      - [Crack stolen credentials](https://github.com/)
+      - [Crack stolen credentials](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/Day1_CrackStation_hashed_pwd_linux4u.png)
       - Generate custom web shell with [msfconsole](https://github.com/)
       - [Upload shell](https://github.com/) via WebDAV 
 
