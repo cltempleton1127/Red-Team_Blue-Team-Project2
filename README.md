@@ -61,7 +61,7 @@ Additional vulnerabilities include:
   - **Explotation: Sensitive Data Exposure**
     - **Tools & Processes**
       - [Crack stolen credentials](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/Day1_CrackStation_hashed_pwd_linux4u.png)
-      - Generate custom web shell with [msfconsole](https://github.com/)
+      - Generate custom web shell with [msfconsole](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/Day1_metasploit%20exploit%20setup.png)
       - [Upload shell](https://github.com/) via WebDAV 
 
     - **Achievements**
