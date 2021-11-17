@@ -52,11 +52,11 @@ Additional vulnerabilities include:
 
     - **Achievements**
       - The exploit revealed a `secret_folder` directory
-      - This directory is [password protected](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/2021-11-13%2017_06_23-Day1_Secret_Folder_revealed.png), but susceptible to **brute-force**
+      - This directory is [password protected](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/2021-11-13%2017_06_23-Day1_Secret_Folder_revealed.png), but susceptible to **Brute Force**
 
     - **Exploitation**
       - The login prompt reveals that the user is `ashton` 
-      - This information is used to run a [brute force attack](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/Day1_Rockyou_ashton_password_find.png) and [steal senstive data](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/Day1_Secret_Folder_Login_Corp_server_message_ashton_password%20-%20Copy.png).
+      - This information is used to run a [Brute Force attack](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/Day1_Rockyou_ashton_password_find.png) and [steal senstive data](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/Day1_Secret_Folder_Login_Corp_server_message_ashton_password%20-%20Copy.png).
 
   - **Explotation: Sensitive Data Exposure**
     - **Tools & Processes**
@@ -76,12 +76,12 @@ A considerable amount of data is available in the logs. Specifically, evidence o
 
   - Traffic from attack VM to target, including unusually high volume of requests
   - Access to sensitive data in the secret_folder directory
-  - Brute-force attack against the HTTP server
+  - Brute Force attack against the HTTP server
   - POST request corresponding to upload of shell.php
 
 
 **Unusual Request Volume**: Logs indicate an unusual number of requests and failed responses between the Kali VM and the target.
-Time: 11/06/2021  12:00-18:00 PM
+Time: 11/06/2021  between the times of 12:00-18:00.
 
 
 **The top hosts creating traffic at this time are the attacking IP of 192.168.1.90 and the target at 192.168.1.105:**
@@ -89,19 +89,19 @@ Time: 11/06/2021  12:00-18:00 PM
 ![alt text](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/TopHostsCreatingTrafficNov6.png)
 
 
-**In addition, note the connection spike in the HTTP Requests around 2:50pm [Packetbeat Flows] ECS, as well as the spike in errors, then a sudden switch to "OK" or successful transaction status around the time of the spike also [Packetbeat] ECS**
+**In addition, note the connection spike in the HTTP Requests around 2:50pm, as well as the spike in errors, then a sudden switch to "OK" or successful transaction status around the time of the spike also.**
 
 ![alt text](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/HTTP%20Transacctions.png)
 
 ![alt text](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/Error_Success_transactions.png)
 
 
-**Access to Sensitive Data in secret_folder**: On the dashboard you built, a look at your Top 10 HTTP requests [Packetbeat] ECS panel. In this example, this folder was requested 14,340 times.
+**Access to Sensitive Data in secret_folder**: On the dashboard I built, a look at the Top 10 HTTP requests shows that this folder was requested 14,340 times.
 
 ![alt text](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/secret_folder_access_highlighted.png)
 
 
-**HTTP Brute Force Attack**: Searching for `url.path: /company_folders/secret_folder/` shows conversations involving the sensitive data. Specifically, the results contain requests from the brute-forcing tool Hydra, identified under the user_agent.original section.
+**HTTP Brute Force Attack**: Searching for `url.path: /company_folders/secret_folder/` shows conversations involving the sensitive data. Specifically, the results contain requests from the common brute-forcing tool Hydra, identified below.
 
 ![alt text](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/2021-11-11%2020_04_20-Day2_180MIN_kibana_discover_mozilla_hydra.png)
 
