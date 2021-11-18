@@ -107,8 +107,8 @@ Time: 11/06/2021  between the times of 12:00-18:00.
 
 In addition, the logs contain evidence of a **large number of requests for the sensitive data**, of which only 6 were successful. This is a telltale signature of a brute force attack. 
 
-  - 14,340 HTTP requests to "http://192.168.1.105/company_folders/secrets_folder"
-  - 6 successful attempts
+  - 14,340 HTTP requests to http://<i></i>192.168.1.105/company_folders/secrets_folder
+  - 6 successful attempts indicated by **http://<i></i>192.168.1.105/company_folders/secrets_folder/**
   - 11/06/2021  12:00-18:00 PM
   - Source IP: 192.168.1.105
 
@@ -127,30 +127,30 @@ One of these log details is broken out [here](https://github.com/cltempleton1127
   * Blocking the Port Scan
 
     * The local firewall can be used to throttle incoming connections
-    * Firewall should be regularly patched to minimise new attacks
+    * Firewall should be regularly patched to minimize new attacks
     * ICMP traffic can be filtered
     * An IP allowed list can be enabled
     * Regularly run port scans to detect and audit any open ports
 
-  **High Volume of Traffic from Single Endpoint**
+  * High Volume of Traffic from Single Endpoint
+  
+    * Rate-limiting traffic from a specific IP address would reduce the web server's susceptibility to DoS conditions, as well as provide a hook against which to trigger alerts against suspiciously suspiciously fast series of requests that may be indicative of scanning.
 
-  * Rate-limiting traffic from a specific IP address would reduce the web server's susceptibility to DoS conditions, as well as provide a hook against which to trigger alerts against suspiciously suspiciously fast series of requests that may be indicative of scanning.
-
-  **Access to sensitive data** in the secret_folder directory
+  * Access to sensitive data in the secret_folder directory
 
     * The secret_folder directory should be protected with stronger authentication. 
     * Data inside of secret_folder should be encrypted at rest.
     * Filebeat should be configured to monitor access to the secret_folder directory and its contents.
     * Access to secret_folder should be whitelisted, and access from IPs not on this whitelist, logged.
 
-  **Brute Force** attack against the HTTP server
+  * Brute Force attack against the HTTP server
 
     * The [fail2ban utility](https://www.fail2ban.org/wiki/index.php/Main_Page) can be enabled to protect against brute force attacks.
     * Create a policy that locks out accounts after 10 failed attempts
     * Create a policy that increases password complexity (requirements)
     * Enable MFA
 
-  **POST request** corresponding to upload of **shell.php**
+  * POST request corresponding to upload of **shell.php**
 
     * File uploads should require authentication.
     * In addition, the server should implement an upload filter and forbid users from uploading files that may contain executable code.
