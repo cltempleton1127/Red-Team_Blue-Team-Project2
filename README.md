@@ -116,7 +116,7 @@ In addition, the logs contain evidence of a large number of requests for the sen
 
 WebDAV Connection & Upload of shell.php: The logs also indicate that an unauthorized actor was able to access protected data in the webdav directory. The passwd.dav file was requested via GET, and shell.php uploaded via POST.
 
-POST logs showing this can be seen [here](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/POST1.png).  One of these log details is broken out [here](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/POST2.png) and [here]() as well.
+POST logs showing this can be seen [here](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/POST1.png).  One of these log details is broken out [here](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/POST2.png) and [here](https://github.com/cltempleton1127/Red-Team_Blue-Team-Project2/blob/master/Supplemental%20Resources/POST3.png) as well.
 
 
 ## Mitigation steps for each vulnerability above are provided below.
